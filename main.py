@@ -1,4 +1,5 @@
-from game import Mastermind
+from game import Mastermind, choose_difficulty
 
 if __name__ == "__main__":
-    Mastermind().run()
+    difficulty = choose_difficulty()
+    Mastermind(difficulty=difficulty).run()
